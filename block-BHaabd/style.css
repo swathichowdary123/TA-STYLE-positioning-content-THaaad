@@ -56,7 +56,8 @@ table {
 .container{
     max-width: 1200px;
     margin:0 auto;
-    padding:0 30px;
+    padding: 32px;
+	background-color: white;
 }
 .clearfix::before,
 .clearfix::after{
@@ -68,32 +69,47 @@ table {
 }
 body{
 	background-color: gray;
+	padding:40px;
 }
 h1{
-	font-size: 40px;
+	font-size: 50px;
 	color:black;
 	text-align: center;
+	padding: 32px;
 }
-.section{
-	background-color: white;
-	margin-top: 40px;
-}
+
 h2{
-	font-size: 30px;
+	font-size: 36px;
 	text-align: center;
+	text-transform: capitalize;
+	margin-bottom:20px;
 }
 p{
 	font-size: 20px;
 	margin-bottom: 15px;
 }
-.float{
-	float:left;
-}
-article{
-	width:40%;
-	float:right;
+.article img{
+	width: 100%;
 }
 .aside-right{
 	float:right;
 	width:30%;
+}
+.left{
+	float: left;
+}
+aside{
+	width:25%;
+}
+article{
+	width:50%;
+}
+.article p{
+	font-size:16px;
+	margin-top: 16px;
+}
+.right-side{
+	padding-left: 32px;
+	font-size: 24px;
+	line-height: 1.7;
 }
