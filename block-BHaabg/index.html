@@ -1,0 +1,84 @@
+<!-- ### Exercise
+
+1. Create a simple page having a header, main content, and a footer.
+
+2. Inside the header keep the logo to the left and all the navigation to the right.
+
+3. The header must be fixed at the top of the page.
+
+4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
+
+5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
+
+6. After the gallery section footer will come.
+
+7. Take a circular button at the right bottom corner of the page and keep its position fixed. The button should always take to the top of the page once clicked. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d405d01f67.js" crossorigin="anonymous"></script>
+</head>
+<body id="top">
+        <header class="header clearfix">
+            <a class="brand" href="#">
+                <img src="data:image/png;base64,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" alt="logo">
+            </a>
+            <nav class="nav">
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+            </nav>
+        </header>
+        <main>
+            <article class="article clearfix">
+                <div class="container">
+                    <div class="col-1">
+                        <h2>this is the first article</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos neque consequuntur officia possimus placeat voluptas ea tempora harum animi inventore quibusdam modi, tenetur facilis quisquam explicabo eaque voluptatum dolores vero?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos neque consequuntur officia possimus placeat
+                        </p>
+                    </div>
+                    <div class="col-1">
+                        <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfOXetEQbp__e4SJic-ALbYlvdfXWeFoMCwQ&usqp=CAU" alt="pic">
+                    </div>
+                    </div>
+                </article>
+            <section class="gallery clearfix">
+                <div class="container clearfix">
+                        <div class="col-01">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvjxzoB-gIOv96gvkEM4w6E2gYnmkCsty5A&usqp=CAU" alt="img-01">
+                        </div>
+                        <div class="col-01">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHHPZJReRqiqYNy-286XQnaKvTKCzIZG5h7g&usqp=CAU" alt="img-02">
+                        </div>
+                        <div class="col-01">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiN6WgDyMlTgd8RszbypIVLXK9XhukVFHoA&usqp=CAU" alt="img-03">
+                        </div>
+                        <div class="col-01">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyvjxzoB-gIOv96gvkEM4w6E2gYnmkCsty5A&usqp=CAU" alt="img-04">
+                            </div>
+                        <div class="col-01">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHHPZJReRqiqYNy-286XQnaKvTKCzIZG5h7g&usqp=CAU" alt="img-02">
+                        </div>
+                        <div class="col-01">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxiN6WgDyMlTgd8RszbypIVLXK9XhukVFHoA&usqp=CAU" alt="img-06">
+                </div>
+            </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <nav>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </nav>
+                </div>
+            </footer>
+            <a class="top" href="#top">top</a>
+</body>
+</html>
